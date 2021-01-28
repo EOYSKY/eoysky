@@ -1,13 +1,13 @@
-package com.eoysky.generator;
+package com.eoysky.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EoyskyGeneratorApplication {
+public class ConfigApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EoyskyGeneratorApplication.class, args);
+        SpringApplication.run(ConfigApplication.class, args);
     }
 
 }
