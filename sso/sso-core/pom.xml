@@ -12,7 +12,7 @@
     <artifactId>eoysky-sso-core</artifactId>
     <version>1.0.0</version>
     <name>eoysky-sso-core</name>
-    <description>eoysky-sso-core</description>
+    <description>sso core design by eoysky</description>
     <packaging>jar</packaging>
 
     <properties>

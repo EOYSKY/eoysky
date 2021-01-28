@@ -12,7 +12,7 @@
     <artifactId>eoysky-sso-server</artifactId>
     <version>1.0.0</version>
     <name>eoysky-sso-server</name>
-    <description>eoysky-sso-server</description>
+    <description>sso server design by eoysky</description>
     <packaging>jar</packaging>
 
     <properties>

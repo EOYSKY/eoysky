@@ -12,7 +12,7 @@
     <artifactId>eoysky</artifactId>
     <version>1.0.0</version>
     <name>eoysky</name>
-    <description>EOYSKY main project</description>
+    <description>eoysky project parent pom</description>
     <packaging>pom</packaging>
     <!--多模块-->
     <modules>
@@ -20,11 +20,11 @@
         <module>sso/sso-core</module>
         <module>sso/sso-server</module>
         <!--app-->
-        <module>app/admin</module>
         <module>app/home</module>
-        <!--common-->
-        <module>common/common</module>
-        <module>common/model</module>
+        <module>app/admin</module>
+        <module>app/common/tools</module>
+        <module>app/common/model</module>
+        <module>app/test</module>
     </modules>
 
     <properties>
@@ -54,7 +54,7 @@
     <!--    </build>-->
     <!--编译打包插件配置-->
     <build>
-        <finalName>imghub-server</finalName>
+        <!--<finalName>eoysky</finalName>-->
         <!-- 定义了变量配置文件的地址 -->
         <filters>
             <filter>src/main/resources/config/application-${env}.yml</filter>
@@ -86,29 +86,29 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>${maven-jar-plugin.version}</version>
-                <configuration>
-                    <archive>
-                        <addMavenDescriptor>true</addMavenDescriptor>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>cn.lmsite.imghub.ImghubApplication</mainClass>
-                        </manifest>
-                        <manifestEntries>
-                            <Class-Path>./</Class-Path>
-                        </manifestEntries>
-                    </archive>
-                    <!-- 资源文件，如 sql 文件过滤掉不希望包含在 jar 中的文件  -->
-                    <excludes>
-                        <exclude>data/*</exclude>
-                    </excludes>
-                </configuration>
+                <version>3.2.0</version>
+                <!--<configuration>-->
+                <!--    <archive>-->
+                <!--        <addMavenDescriptor>true</addMavenDescriptor>-->
+                <!--        <manifest>-->
+                <!--            <addClasspath>true</addClasspath>-->
+                <!--            <classpathPrefix>lib/</classpathPrefix>-->
+                <!--            <mainClass></mainClass>-->
+                <!--        </manifest>-->
+                <!--        <manifestEntries>-->
+                <!--            <Class-Path>./</Class-Path>-->
+                <!--        </manifestEntries>-->
+                <!--    </archive>-->
+                <!--    &lt;!&ndash; 资源文件，如 sql 文件过滤掉不希望包含在 jar 中的文件  &ndash;&gt;-->
+                <!--    <excludes>-->
+                <!--        <exclude>data/*</exclude>-->
+                <!--    </excludes>-->
+                <!--</configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin.version}</version>
+                <version>2.22.2</version>
                 <configuration>
                     <skipTests>true</skipTests>
                 </configuration>
@@ -140,20 +140,20 @@
         </profile>
     </profiles>
     <repositories>
-        <repository>
-            <id>central</id>
-            <name>central repository</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
-        </repository>
+        <!--<repository>-->
+        <!--    <id>central</id>-->
+        <!--    <name>central repository</name>-->
+        <!--    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+        <!--    <layout>default</layout>-->
+        <!--    <releases>-->
+        <!--        <enabled>true</enabled>-->
+        <!--        <updatePolicy>never</updatePolicy>-->
+        <!--    </releases>-->
+        <!--    <snapshots>-->
+        <!--        <enabled>true</enabled>-->
+        <!--        <updatePolicy>never</updatePolicy>-->
+        <!--    </snapshots>-->
+        <!--</repository>-->
     </repositories>
 
 </project>

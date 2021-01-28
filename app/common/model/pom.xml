@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.eoysky</groupId>
-    <artifactId>home</artifactId>
+    <artifactId>model</artifactId>
     <version>1.0.0</version>
-    <name>eoysky-home</name>
-    <description>home for eoysky</description>
+    <name>eoysky-model</name>
+    <description>common model for eoysky</description>
     <properties>
         <java.version>11</java.version>
     </properties>

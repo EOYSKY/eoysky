@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.eoysky</groupId>
-    <artifactId>eoysky-admin</artifactId>
+    <artifactId>admin</artifactId>
     <version>1.0.0</version>
     <name>eoysky-admin</name>
-    <description>eoysky-admin</description>
+    <description>admin for eoysky</description>
     <packaging>jar</packaging>
 
     <properties>
