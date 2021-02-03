@@ -1,10 +1,10 @@
-package com.eoysky.generator;
+package com.eoysky.base;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GeneratorApplicationTests {
+class EoyskyApplicationTest {
 
     @Test
     void contextLoads() {

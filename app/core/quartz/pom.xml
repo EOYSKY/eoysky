@@ -8,14 +8,14 @@
         <groupId>com.eoysky</groupId>
         <artifactId>eoysky</artifactId>
         <version>1.0.0</version>
-        <relativePath>../../pom.xml</relativePath>
+        <relativePath>../../../pom.xml</relativePath>
     </parent>
 
-    <!--eoysky-home bundle-->
-    <artifactId>eoysky-home</artifactId>
+    <!--eoysky-quartz bundle-->
+    <artifactId>eoysky-quartz</artifactId>
     <version>1.0.0</version>
-    <name>eoysky-home</name>
-    <description>home for eoysky</description>
+    <name>eoysky-quartz</name>
+    <description>quartz for eoysky</description>
 
     <!--version properties-->
     <properties>

@@ -9,4 +9,4 @@ git commit -m "${message}${USER} update at ${date}."
 git push -u origin master
 
 echo "更新并推送成功！"
-exit 0;
+exit 0
